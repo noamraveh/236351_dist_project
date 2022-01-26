@@ -1,11 +1,28 @@
-Distributed Systems 236351 - Final Project
+# Distributed Systems 236351 - Final Project
 
-The src file contains all the necessary code for building and running the project.
 
-**Protos**
+## Running Instructions
+
+
+Run the following two commands from the main directory 
+1. Navigate to src folder
+   ```sh
+	cd src
+   ```
+2. Run docker containers
+   ```sh
+   sudo docker-compose up
+   ```
+
+## About the code
+
+
+The src folder contains all the necessary code for building and running the project.
+
+### Protos
 The proto file defining the various messages and services used for grpc communication between the server
 
-**Server**
+### Server
 Contains all the code for the system
     **grpc_client directory**
     Contains the code for the communication between two different grpc clients (sending requests to and from the relevant servers).
@@ -14,6 +31,6 @@ Contains all the code for the system
     **Server**
     Code for the RESTful APIs used by clients to submit requests.
 
-**etc**
+### etc
 Notebook file (.ipynb) for testing and demonstrating the system.
 Submits multiple requests for sending coins, submitting transactions (regular and atomic list) and getting ledger history and UTxOs.
