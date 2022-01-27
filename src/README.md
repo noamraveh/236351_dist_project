@@ -4,10 +4,10 @@
 ## Running Instructions
 
 
-Run the following command from the main directory 
+Run the following command from this directory (src)
 
    ```sh
-   docker-compose --project-directory ./src -f ./src/docker/docker-compose.yml up
+   docker-compose --project-directory . -f ./docker/docker-compose.yml up
    ```
 
 ## About the code
