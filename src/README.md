@@ -4,14 +4,10 @@
 ## Running Instructions
 
 
-Run the following two commands from the main directory 
-1. Navigate to src folder
+Run the following command from the main directory 
+
    ```sh
-	cd src
-   ```
-2. Run docker containers
-   ```sh
-   sudo docker-compose up
+   docker-compose --project-directory ./src -f ./src/docker/docker-compose.yml up
    ```
 
 ## About the code
