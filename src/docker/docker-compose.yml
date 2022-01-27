@@ -37,29 +37,29 @@ services:
       - zookeeper
     cpu_count: 1
 
-#  node01:
-#    environment:
-#      - SHARD=0
-#    build:
-#      context: .
-#      dockerfile: ./docker/Dockerfile
-#    ports:
-#      - 10001:8080
-#    networks:
-#      - zookeeper
-#    cpu_count: 1
-#
-#  node02:
-#    environment:
-#      - SHARD=0
-#    build:
-#      context: .
-#      dockerfile: ./docker/Dockerfile
-#    ports:
-#      - 10002:8080
-#    networks:
-#      - zookeeper
-#    cpu_count: 1
+ node01:
+   environment:
+     - SHARD=0
+   build:
+     context: .
+     dockerfile: ./docker/Dockerfile
+   ports:
+     - 10001:8080
+   networks:
+     - zookeeper
+   cpu_count: 1
+
+ node02:
+   environment:
+     - SHARD=0
+   build:
+     context: .
+     dockerfile: ./docker/Dockerfile
+   ports:
+     - 10002:8080
+   networks:
+     - zookeeper
+   cpu_count: 1
 
   node10:
     environment:
@@ -72,30 +72,30 @@ services:
     networks:
       - zookeeper
     cpu_count: 1
-#
-#  node11:
-#    environment:
-#      - SHARD=1
-#    build:
-#      context: .
-#      dockerfile: ./docker/Dockerfile
-#    ports:
-#      - 10004:8080
-#    networks:
-#      - zookeeper
-#    cpu_count: 1
-#
-#  node12:
-#    environment:
-#      - SHARD=1
-#    build:
-#      context: .
-#      dockerfile: ./docker/Dockerfile
-#    ports:
-#      - 10005:8080
-#    networks:
-#      - zookeeper
-#    cpu_count: 1
+
+ node11:
+   environment:
+     - SHARD=1
+   build:
+     context: .
+     dockerfile: ./docker/Dockerfile
+   ports:
+     - 10004:8080
+   networks:
+     - zookeeper
+   cpu_count: 1
+
+ node12:
+   environment:
+     - SHARD=1
+   build:
+     context: .
+     dockerfile: ./docker/Dockerfile
+   ports:
+     - 10005:8080
+   networks:
+     - zookeeper
+   cpu_count: 1
 
   node20:
     environment:
@@ -109,30 +109,30 @@ services:
       - zookeeper
     cpu_count: 1
 
-#  node21:
-#    environment:
-#      - SHARD=2
-#    build:
-#      context: .
-#      dockerfile: ./docker/Dockerfile
-#    ports:
-#      - 10007:8080
-#    networks:
-#      - zookeeper
-#    cpu_count: 1
-#
-#  node22:
-#    environment:
-#      - SHARD=2
-#    build:
-#      context: .
-#      dockerfile: ./docker/Dockerfile
-#    ports:
-#      - 10008:8080
-#    networks:
-#      - zookeeper
-#    cpu_count: 1
-#
+ node21:
+   environment:
+     - SHARD=2
+   build:
+     context: .
+     dockerfile: ./docker/Dockerfile
+   ports:
+     - 10007:8080
+   networks:
+     - zookeeper
+   cpu_count: 1
+
+ node22:
+   environment:
+     - SHARD=2
+   build:
+     context: .
+     dockerfile: ./docker/Dockerfile
+   ports:
+     - 10008:8080
+   networks:
+     - zookeeper
+   cpu_count: 1
+
 
   zoonavigator:
     image: elkozmon/zoonavigator:1.1.1
